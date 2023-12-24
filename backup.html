@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      .prev_container {
+        color: #000000;
+      }
+      .prev_container > p {
+        font-size: 16px;
+        padding: 10px 0;
+      }
+      h3.preview_heading {
+        position: relative;
+        padding: 5px 0;
+        margin-top: 20px;
+      }
+      .preview_heading:after {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100px;
+        height: 3px;
+        background: #d62196;
+        content: "";
+      }
+
+      .prev_items {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 24px 0;
+        border-bottom: 1px solid #a9b3c6ff;
+      }
+      .prev_items > strong {
+        width: 50%;
+        text-align: left;
+      }
+      .prev_items > span {
+        width: 50%;
+        text-align: left;
+      }
+    </style>
+
+    <div class="prev_container">
+      <h3 class="preview_heading">Preview form data</h3>
+      <p>We're open for any suggestion or just to have a chat</p>
+      <div class="prev_items">
+        <strong>Name:</strong>
+        <span>{{contact.first_name}} {{contact.last_name}}</span>
+      </div>
+      <div class="prev_items">
+        <strong>Email:</strong>
+        <span>{{contact.email}}</span>
+      </div>
+      <div class="prev_items">
+        <strong>Phone:</strong>
+        <span>{{contact.phone}}</span>
+      </div>
+      <div class="prev_items">
+        <strong>Zip code:</strong>
+        <span>{{contact.postal_code}}</span>
+      </div>
+      <div class="prev_items">
+        <strong>Address:</strong>
+        <span>{{contact.full_address}}</span>
+      </div>
+      <div class="prev_items">
+        <strong>Website:</strong>
+        <span>{{contact.website}}</span>
+      </div>
+      <div class="prev_items">
+        <strong>Birth date:</strong>
+        <span>{{contact.date_of_birth}}</span>
+      </div>
+      <h3 class="preview_heading">Fill up the form</h3>
+    </div>
+  </body>
+</html>
